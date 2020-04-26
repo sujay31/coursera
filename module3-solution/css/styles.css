@@ -26,6 +26,25 @@ body
     
 }
 
+#collapsable-nav
+{
+    text-align: center;
+    width: 100%;
+}
+
+li
+{
+    border: 1px solid black;
+    background-color: white;
+    margin: .50px;
+}
+
+li:hover
+{
+    background-color: teal;
+    color:lightgreen;
+}
+
 #menu
 {
     font-size: 25px;
