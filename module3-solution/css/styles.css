@@ -1,0 +1,59 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+#navigation-bar
+{
+    background-color: rgb(211, 205, 205);
+    border-radius: 0px;
+    border: 0px;
+}
+
+#brand
+{
+    color: royalblue;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+#navigation-bar button.navbar-toggle, #navigation-ba .icon-bar
+{
+    border: 1px solid rgb(0, 0, 0);
+    
+}
+
+#menu
+{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+#chicken, #beef, #sushi
+{
+    background-color: rgb(211, 205, 205);
+    padding-bottom: 10px;
+}
+
+#sushi
+{
+    padding-bottom: 20px;
+}
+
+#chicken-title, #beef-title, #sushi-title
+{
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+#chicken-method, #beef-method, #sushi-method
+{
+    padding-left: 4px;
+}
