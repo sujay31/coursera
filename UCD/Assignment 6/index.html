@@ -1,0 +1,193 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title> CGPA Calculator </title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript" src="script.js" ></script>
+    </head>
+    <body>
+        <div id="backgroundIm">
+            <div id="content">
+                <h1> CGPA Calculator </h1>
+                
+                <!-- Table layout has been used to make the form -->
+                <table>
+                    <tr class="note">
+                        <td colspan="2"><label for="note">(Please fill out the required fields before submitting the form)</label></td>
+                    </tr>
+
+                    <!-- Text input is used -->
+                    <tr>
+                        <td ><label for="fname" > FIRST NAME: </label></td> 
+                        <td > <input type = "text" name="fname" id="fname" placeholder="required field" onblur = "checkLengthF();" required><span id="firstname"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lname"> LAST NAME: </label></td> 
+                        <td> <input type = "text" name="lname" id="lname" placeholder="required field"  onblur = "checkLengthL()" required><span id="lastname"></span></td>
+                    </tr>
+                    
+                    <!-- Date input is used -->
+                    <tr>
+                        <td><label for = "dob"> DATE OF BIRTH: </label></td> 
+                        <td><input type="date" name="dob" id="dob" placeholder="optional"><span id = "dateOfBirth"></span></td>
+                    </tr>
+
+                    <!-- Number input is used -->
+                    <tr>
+                        <td><label for = "age"> AGE: </label></td> 
+                        <td><input type="number" name="age" id="age" placeholder="optional" min="17" max="21"><span id = "ag"></span></td>
+                    </tr>
+                    <tr class="note">
+                        <td colspan="2"><label>If branch code is unknown, use B4 (code for Maths)</label></td>
+                    </tr>
+                    
+                    <!-- Other valid Branch codes are A1, A2, A3, A4, A7, A8, B1, B2, B3, B4, B5 -->
+                    <tr>
+                        <td><label for = "branch"> BRANCH CODE: </label></td> 
+                        <td><input type="text" name="branch" id="branch" placeholder="required field" onblur="branchVerification();" required> <span id = "code"></span> </td>
+                   </tr>
+                    
+                    <!-- Radio box input is also used -->
+                   <tr>
+                        <td><label> GENDER: </label></td> 
+                        <td><input type="radio" name="gender" checked> Male</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="radio" name="gender" > Female</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="radio" name="gender" > Other</td>
+                    </tr>
+                    <tr class="note">
+                        <td colspan="2"><label for="note">(Please enter 0 if any field below is inapplicable)</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">SUBJECT-I: MATH F111(CALCULUS)</td>
+                    </tr>
+                    <tr>
+                        <td><label for="u1">UNITS:</label></td>
+                        <td><input type="number" name="u1" id="u1" min="1" max="4" onblur="unit1();" placeholder="0 - 4"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="g1">GRADE:</label></td>
+                        <td><input type="number" name="g1" id="g1" min="0" max="10" onblur="grade1();" placeholder="0 - 10" ></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">SUBJECT-II: BITS F111(THERMODYNAMICS)</td>
+                    </tr>
+                    <tr>
+                        <td><label for="u2">UNITS:</label></td>
+                        <td><input type="number" name="u2" id="u2" min="1" max="4" onblur="unit2();" placeholder="0 - 4" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="g2">GRADE:</label></td>
+                        <td><input type="number" name="g2" id="g2" min="0" max="10" onblur="grade2();" placeholder="0 - 10" ></td>
+                    </tr> 
+                    <tr>
+                        <td colspan="2">SUBJECT-III: PHY F110(PHYSICS LAB)</td>
+                    </tr>
+                    <tr>
+                        <td><label for="u3">UNITS:</label></td>
+                        <td><input type="number" name="u3" id="u3" min="1" max="4" onblur="unit3();" placeholder="0 - 4" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="g3">GRADE:</label></td>
+                        <td><input type="number" name="g3" id="g3" min="0" max="10" onblur="grade3();" placeholder="0 - 10" ></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">SUBJECT-IV: CHEM F110(CHEMISTRY LAB)</td>
+                    </tr>
+                    <tr>
+                        <td><label for="u4">UNITS:</label></td>
+                        <td><input type="number" name="u4" id="u4" min="1" max="4" onblur="unit4();" placeholder="0 - 4" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="g4">GRADE:</label></td>
+                        <td><input type="number" name="g4" id="g4" min="0" max="10" onblur="grade4();" placeholder="0 - 10" ></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">SUBJECT-V: EEE F111(CIRCUITS)/CS F111(PROGRAMMING)</td>
+                    </tr>
+                    <tr>
+                        <td><label for="u5">UNITS:</label></td>
+                        <td><input type="number" name="u5" id="u5" min="1" max="4" onblur="unit5();" placeholder="0 - 4" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="g5">GRADE:</label></td>
+                        <td><input type="number" name="g5" id="g5" min="0" max="10" onblur="grade5();" placeholder="0 - 10" ></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">SUBJECT-VI: CHEM F111(CHEMISTRY)/BIO F111(BIOLOGY)</td>
+                    </tr>
+                    <tr>
+                        <td><label for="u6">UNITS:</label></td>
+                        <td><input type="number" name="u6" id="u6" min="1" max="4" onblur="unit6();" placeholder="0 - 4" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="g6">GRADE:</label></td>
+                        <td><input type="number" name="g6" id="g6" min="0" max="10" onblur="grade6();" placeholder="0 - 10" ></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">SUBJECT-VII: PHY F111(MECHANICS)/ BITS F112(REPORTS)</td>
+                    </tr>
+                    <tr>
+                        <td><label for="u7">UNITS:</label></td>
+                        <td><input type="number" name="u7" id="u7" min="1" max="4" onblur="unit7();" placeholder="0 - 4" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="g7">GRADE:</label></td>
+                        <td><input type="number" name="g7" id="g7" min="0" max="10" onblur="grade7();" placeholder="0 - 10" ></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">SUBJECT-VIII: BITS F110/ME F110(WORKSHOP)</td>
+                    </tr>
+                    <tr>
+                        <td><label for="u8">UNITS:</label></td>
+                        <td><input type="number" name="u8" id="u8" min="1" max="4" onblur="unit8();" placeholder="0 - 4" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="g8">GRADE:</label></td>
+                        <td><input type="number" name="g8" id="g8" min="0" max="10" onblur="grade8();" placeholder="0 - 10"></td>
+                    </tr>
+
+                    <!-- BIO LAB is available only if the course repots has been taken -->
+                    <tr id="bioLabName">
+                        <td colspan="2">SUBJECT-IX: BIO F110(BIO LAB)</td>
+                    </tr>
+                    <tr id="bioLabUnits">
+                        <td><label for="u9">UNITS:</label></td>
+                        <td><input type="number" name="u9" id="u9" min="1" max="4" onblur="unit9();" placeholder="0 - 4"></td>
+                    </tr>
+                    <tr id="bioLabGrade">
+                        <td><label for="g9">GRADE:</label></td>
+                        <td><input type="number" name="g9" id="g9" min="0" max="10"  onblur="grade9();" placeholder="0 - 10"></td>
+                    </tr>
+                    <tr class="note">
+                        <td colspan="2">Add your favorite color(for fun)</td>
+                    </tr>
+
+                    <!-- Color input is used -->
+                    <tr>
+                        <td>FAVORITE COLOR: </td>
+                        <td > <input type="color" name="color" id="color"></td>
+                    </tr>
+                    
+                </table>
+                <div id="finish">
+                    <button type="button" id="button1" onclick="buttonPressed();">FINISH</button>
+                </div>
+                
+                <!-- Displays result -->
+                <h2 id="result"></h2>
+
+                <!-- Reloads page for next calculation -->
+                <div id="reloadPage">
+                    <button type="button" id="button2" onClick="window.location.reload();">Calculate Next</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

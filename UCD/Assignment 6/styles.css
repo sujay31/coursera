@@ -1,0 +1,128 @@
+/* Since no image was suitable for this form, I used background image with proper styles */
+
+*
+{
+    margin: 0px;
+}
+
+div#content
+{
+    font-family: cursive,sans-serif;
+    font-size: 20px;
+}
+
+#backgroundIm
+{
+    background: url(bits-emblem-circle.png) no-repeat center;
+    background-size: contain;
+    background-color: rgba(241, 209, 159, 0.4);
+}   
+
+h1
+{
+    color: rgb(221, 112, 112);
+    text-align: center;
+    padding: 40px 0px 20px;
+}
+
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input
+{
+    margin: 8px 0px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 110%;
+    padding: 5px;
+}
+
+#age
+{
+    width: 100px;
+}
+
+input::placeholder
+{
+    text-align: center;
+    opacity: .3;
+}
+
+.note
+{
+    color: red;
+    font-size: 80%;
+    opacity: .8;
+    padding-top: 40px;
+}
+
+h2
+{
+    text-align: center;
+}
+
+#bioLabName, #bioLabUnits, #bioLabGrade
+{
+    display: none;
+}
+
+#color
+{
+    width: 80px;
+}
+
+#finish
+{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+button
+{
+    text-align: center;
+    font-size: 120%;
+    padding: auto;
+    height: 60px;
+    width: 125px;
+    background-color: rgb(97, 125, 177);
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: green;
+    opacity: .5;
+}
+
+#messageName, #messageBranch, #messageCredits, #messageUnits, #messageCGPA
+{
+    color: teal;
+    background-color: rgb(250, 250, 91);
+}
+
+#calculation
+{
+    padding-bottom: 80px;
+}
+
+#reloadPage
+{
+    width: 200px;
+    padding-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#button2
+{
+    width: 200px;
+    visibility: hidden;
+}
