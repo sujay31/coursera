@@ -1,0 +1,179 @@
+body 
+{
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0px;
+    background-image: url("star.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1
+{
+    font-family: cursive, sans-serif;
+    color: darkgoldenrod;
+    text-align: center;
+    font-size: 300%;
+    background-color: darkslategray;
+    margin-top: -1px;
+    height: 100px;
+}
+
+h2
+{
+    font-size: 170%;
+    color: rgb(231, 213, 45);
+    margin-left: 2%;
+}
+
+.heading
+{
+    font-size: 150%;
+    font-family: cursive, sans-serif;
+    font-weight: bold;
+    color: crimson;
+    display: none;
+}
+
+#converted
+{
+    margin-left: 20%;
+}
+
+#initial
+{
+    padding-left: 40%;
+}
+
+#canvases
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+canvas
+{
+    border: 10px solid lightgray;
+    width: 40%;
+}
+
+#canForImage, #canForFinal
+{
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: white;
+}
+
+#canForFinal
+{
+    display: none;
+}
+
+#fileInput
+{
+    text-align: center;
+}
+
+#fl
+{
+    padding: 8px;
+    font-size: 140%;
+    cursor: pointer;
+    width: 300px;
+    background-color: rgb(236, 87, 167);
+}
+
+#filters
+{
+    margin: 30px 0px 20px 0px;
+    margin-left: 4%;
+    color: limegreen;
+    font-size: 150%;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.filtersAvailable
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#greyscale, #red, #tint, #vintage, #rainbow, #teal, #noise, #reset, #clear
+{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(162, 147, 229);
+    height: 40px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#greyscale, #rainbow, #vintage
+{
+    width:100px;
+}
+
+#red, #tint, #teal, #noise, #reset, #clear
+{
+    width:70px;
+}
+
+/* #rainbow
+{
+    margin-top: 20px;
+} */
+
+#greyscale:hover, #red:hover, #tint:hover, #vintage:hover, #rainbow:hover, #teal:hover, #noise:hover, #reset:hover, #clear:hover
+{
+    opacity: .8;
+    background-color: darkslateblue;
+    color: darkturquoise;
+}
+
+#reset, #clear
+{
+    visibility:hidden;
+    width:100px;
+    font-size: 130%;
+    margin-right: 30px;
+}
+
+#nextImage
+{
+    text-align: right;
+    margin-right: 10%;
+}
+
+#downloadButton
+{
+    text-align: center;
+    font-size: 150%;
+    padding: 10px;
+    height:70px;
+    border: 1px solid blueviolet;
+    border-radius: 50px;
+    width: 170px;
+    background-color: rgb(18, 127, 230);
+    cursor: pointer;
+    margin-left: 16%;
+    margin-bottom: 0px;
+    display: none; 
+}
+
+#downloadButton:hover
+{
+    opacity: 0.8;
+    background-color: chartreuse;
+}
+
+input
+{
+    font-size: 18px;
+    text-align: center;
+}
+

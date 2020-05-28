@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Filters</title>
+        <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js" > </script>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1> Filter Fun </h1>
+        <h2> Upload image to apply exciting filters </h2>
+        <div class="heading">
+            <span id="converted"> Processed </span>
+            <span id="initial"> Initial </span>
+        </div>
+        <div id="canvases">
+            <canvas id="canForImage"></canvas>
+            <canvas id="canForFinal"></canvas> 
+        </div>
+        <div id="fileInput">
+            <input type="file" multiple="false" accept="image/*" id="fl" onchange="uploadOriginal()" >
+        </div>
+        <button id="downloadButton" onclick="downloadCanvasAsImage()">Download</button>
+        <!-- <p>
+            Background: <input type="file" multiple="false" accept="image/*" id="bgFile" onchange="uploadBackGround()" >
+        </p> -->
+        <div id = "filters">Filters</div>
+        <p class="filtersAvailable">
+        <input type="button" id="greyscale" value="GreyScale" onclick="doGreyScale()">
+        <input type="button" id="red" value="Red" onclick="doRed()">
+        <input type="button" id="tint" value="Tint" onclick="doTint()">
+        <input type="button" id="vintage" value="Vintage" onclick="doVintage()"> 
+        <input type="button" id="rainbow" value="Rainbow" onclick="doRainbow()">
+        <input type="button" id="teal" value="Teal" onclick="doTeal()">
+        <input type="button" id="noise" value="Noise" onclick="doNoise()">
+        </p>
+        <p id="nextImage">
+        <input type="button" id="reset" value="Reset" onclick="Reset()"> 
+        <input type="button" id="clear" value="Clear" onclick="doClear()">
+        </p>   
+    </body>
+</html>
